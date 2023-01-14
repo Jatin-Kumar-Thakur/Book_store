@@ -1,0 +1,205 @@
+.cart_container{
+    margin-top: 70px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%);
+}
+.cart{
+    text-align: left;
+    width: 100%;
+    border-radius: 5px;
+    margin: 0 2rem 2rem 2rem;
+}
+.cart-header{
+background-color: var(--Dark_Silver_2);
+padding: 5px 0;
+border-radius: 5px;
+padding: 10px 10px;
+}
+.cart-body{
+    margin: 1rem 0;
+    /* width: 60%; */
+    display: flex;
+}
+.primary_border{
+    box-shadow: 2px 8px 25px 5px rgba(26, 25, 25, 0.3);
+    border-radius: 5px;
+}
+.cart-section1{
+    width: 60%;
+    border-right: 2px solid black;
+}
+.section1__address{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    /* background-color: var(--Dark_Silver_2); */
+}
+.section1__address__path p{
+    padding: 3px 5px;
+
+}
+.section1__items{
+    display: flex;
+    /* align-items: center; */
+    border-bottom: 1px solid  black;
+    padding-bottom: 20px;
+}
+.section1__items__product{
+    margin-top: 15px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.section1__items__details__date{
+    color: red;
+}
+.section1__items__product__quantity{
+    margin-top: 10px;
+}
+.section1__items__product__quantity input{
+    width: 50px;
+}
+.section1__items__details{
+    padding-left: 20px;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+.section1__items__details_description{
+  width: 50%;
+}
+.section1__items__details_description p{
+    padding: 5px 0;
+}
+.section1__items__details_description button{
+   margin-top: 60px;
+}
+
+.section1__place-order{
+    margin-top: 20px;
+    padding: 20px 10px;
+    text-align: right;
+}
+.section1__place-order button{
+    width: 180px;
+    height: 50px;
+}
+
+.cart__section2{
+    padding: 10px 20px;
+    width: 37%;
+    max-height: 50vh;
+    margin-left: 20px;
+    position: sticky;
+    top: 80px;
+}
+.section2__price__header{
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+.section2__price__body{
+/* margin-top: 20px; */
+font-size: 1.3rem;
+
+}
+.section2__price__body__{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20%;
+    padding: 10px 0;
+    border-bottom: 0.2px solid black;
+}
+.section2__price__total{
+    display: flex;
+    justify-content: space-between;
+    /* padding-right: 20%; */
+    margin: 20px 0;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid black;
+}
+.section2__price__total__amount{
+    color: red;
+}
+
+@media screen and (max-width:930px){
+    .section1__items__details{
+        flex-direction: column;
+    }
+    .section1__items__details__date{
+        padding-top: 10px;
+    }
+}
+@media screen and (max-width:800px) {
+    .cart-body{
+        display: flex;
+        flex-direction: column;
+    }
+    /* .section1__items__details{
+        width: 100%;
+    } */
+    .cart-section1{
+        width: 100%;
+        border-right: none;
+    }
+    .cart__section2{
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+    .section1__place-order button{
+        width: 180px;
+        height: 40px;
+        
+    }
+    .primary_btn{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:500px){
+    .cart{
+        margin: 0 0rem 2rem 0rem;
+    }
+    .secondary_btn{
+        padding: 5px 5px;
+        width: 100px;
+    }
+    .section1__items__details_description{
+        font-size: 1rem;
+    }
+    .section1__items__details__date{
+        font-size: 1rem;
+    }
+    .section1__place-order{
+        text-align: center;
+    }
+}
+@media screen and (max-width:350px){
+    .section1__address{
+        flex-direction: column;
+    }
+    .secondary_btn{
+        width: 100px;
+    }
+    .section1__items{
+       flex-direction: column;
+       /* justify-content: center; */
+       align-items: center;
+    }
+    .section1__items__product{
+      width: 100%;
+    }
+    .section1__items__details{
+        width: 100%;
+    }
+    .section1__items__details_description {
+        width: 100%;
+        text-align: left;
+    }
+}
